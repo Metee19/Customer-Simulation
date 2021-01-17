@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System; 
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,17 +6,17 @@ namespace ClassMetotDemo
 {
     class CustomerManager
     {
-        public void add()
+        public void add(Customer customer)
         {
-            Console.WriteLine("Müşteri eklendi");
+            Console.WriteLine("Müşteri Eklendi:" + customer.name + " " + customer.surname);
         }
-        public void delete()
+        public void delete(Customer customer)
         {
-            Console.WriteLine("Müşteri silindi");
+            Console.WriteLine("Müşteri Silindi:" + customer.name + " " + customer.surname);
         }
-        public void list()
+        public void list(Customer customer)
         {
-            Console.WriteLine("Müşteriler listelendi");
+            Console.WriteLine("Müşteriler Listelendi:" + customer.name + " " + customer.surname + " " + customer.age);
         }
     }
 }

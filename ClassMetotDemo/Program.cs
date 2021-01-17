@@ -12,9 +12,9 @@ namespace ClassMetotDemo
             customer1.age = 21;
             customer1.gender = "male";
             customer1.moneyInBank = 0;
-            customer1.add();
-            customer1.list();
-            customer1.delete();
+            customer1.add(customer1);
+            customer1.list(customer1);
+            customer1.delete(customer1);
 
             Customer customer2 = new Customer();
             customer2.name = "Fatmanur";
@@ -22,9 +22,9 @@ namespace ClassMetotDemo
             customer2.age = 21;
             customer2.gender = "female";
             customer2.moneyInBank = 300000;
-            customer2.add();
-            customer2.list();
-            customer2.delete();
+            customer2.add(customer2);
+            customer2.list(customer2);
+            customer2.delete(customer2);
 
             Customer[] customers = new Customer[] {customer1,customer2 };
 
@@ -33,5 +33,6 @@ namespace ClassMetotDemo
                 Console.WriteLine("Company Customer:" + customer.name + " " + customer.surname);
             }
         }
+
     }
 }
